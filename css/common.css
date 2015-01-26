@@ -1,8 +1,13 @@
 body {
   background-color: green;
 }
+section {
+  position: relative;
+  left: -200px;
+}
 
 p {
+  position: relative;
   margin: 0;
   width: 100px;
   height: 50px;
@@ -10,21 +15,21 @@ p {
 
 @keyframes walking_left {
   from { transform: translateX(-50px); }
-  to { transform: translateX(950px); }
+  to { transform: translateX(1950px); }
 }
 
 @keyframes walking_right {
-  from { transform: translateX(0); }
-  to { transform: translateX(1000px); }
+  from { transform: translateX(0px); }
+  to { transform: translateX(2000px); }
 }
 
 p.left {
-  animation: walking_left 8s steps(10, end) forwards;
+  animation: walking_left 20s steps(20, end) forwards;
   background: url('../pictures/empreintes_base_100.png') no-repeat;
 }
 
 p.right {
-  animation: walking_right 8s steps(10, end) forwards 0.5s;
+  animation: walking_right 20s steps(20, end) forwards 0.5s;
   background: url('../pictures/empreintes_base_100.png') no-repeat bottom;
 }
 
